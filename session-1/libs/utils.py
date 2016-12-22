@@ -103,7 +103,8 @@ def get_celeb_files():
         url = 'https://s3.amazonaws.com/cadl/celeb-align/' + f
 
         # We'll print this out to the console so we can see how far we've gone
-        print(url, end='\r')
+        if img_i % 10 == 0:
+            print(url)
 
         # And now download the url to a location inside our new directory
         urllib.request.urlretrieve(url, os.path.join('img_align_celeba', f))
