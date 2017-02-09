@@ -2,3 +2,4 @@
 *.pyc
 session-1/img_align_celeba/
 session-0/img_align_celeba/
+*.png
